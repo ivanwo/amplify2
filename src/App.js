@@ -1,13 +1,13 @@
 import React from 'react';
 import './App.css';
-import bowie from './bowie.mp4';
+import bowie from './bowie.gif';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <h1>Bowie Zone</h1>
-        <video src={bowie} autoPlay="true" loop="infinite" ></video>
+        <img src={bowie} />
         <p>
           ? ? ? ?
         </p>
