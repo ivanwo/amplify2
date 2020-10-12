@@ -1,6 +1,8 @@
 import React from 'react';
 import './App.css';
 import bowie from './bowie.gif';
+import {withAuthenticator, AmplifySignOut} from '@aws-amplify/ui-react';
+import Amplify from 'aws-amplify';
 
 function App() {
   return (
@@ -11,9 +13,10 @@ function App() {
         <p>
           ? ? ? ?
         </p>
+        <AmplifySignOut />
       </header>
     </div>
   );
 }
 
-export default App;
+export default withAuthenticator(App);
